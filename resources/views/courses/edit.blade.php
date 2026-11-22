@@ -1,0 +1,1 @@
+@extends('layouts.app', ['title' => 'Edit Course']) @section('content')<div class="card"><h1>Edit Course</h1>@include('courses.form', ['course' => $course, 'method' => 'PUT', 'action' => route('courses.update',$course)])</div>@endsection
